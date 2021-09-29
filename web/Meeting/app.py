@@ -18,7 +18,8 @@ def admin_bot(recv_msg):
 @app.route('/',methods=['POST','GET'])
 def home():
     char = string.ascii_lowercase + string.digits
-    meet_code = ''.join(random.sample(char*3,3)) + '-' + ''.join(random.sample(char*4,4)) + '-' + ''.join(random.sample(char*3,3))
+    # meet_code = ''.join(random.sample(char*3,3)) + '-' + ''.join(random.sample(char*4,4)) + '-' + ''.join(random.sample(char*3,3))
+    meet_code = '1337_m337_c0d3'
     enc_meet_code = 'The encoded meet code is\n\n' + base64.b64encode(meet_code.encode('ascii')).decode('utf-8')
     global post_meet_code
     post_meet_code = meet_code
