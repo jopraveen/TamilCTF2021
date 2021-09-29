@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>You're Invited</title>
+</head>
+<body>
+    <div class="nav">
+        <img style="height: 40px;width: 40px;padding-left: 30px;float: left;" src="/static/logo.jpg" alt="logo">
+        <img style="float: right;height: 40px;width: 40px;padding-right: 20px;" src="https://github.com/jopraveen/jopraveen.github.io/raw/main/img/fav-icon.png" alt="user-logo">
+        <h1 style="color: white;padding-top: 5px;padding-left: 90px;">TamilCTF Meet</h1>
+    </div>
+    <div class="main">
+        <div style="float: left;" class="left-box">
+            <h1 style="color: white;text-align: center;padding-top: 20px;font-weight: bolder;">TamilCTF Meet</h1><br><br>
+            <h2 style="color: rgb(0, 255, 255);padding-left: 40px;">Welcome to the most advanced and secured meeting platform</h2>
+            <h2 style="color: rgb(0, 255, 255);padding-left: 40px;">This platform is free for everyone, enjoy :)</h2>
+            <button onclick="window.location.href='/'" style="margin-left: 90px;float: left;cursor: pointer;" type="submit"><i class="fa fa-video-camera"></i> New meeting</button>
+            <form action="/join-meet" method="POST">
+                <input style="float: right;" type="text" name="meet-code" placeholder="Enter Meet code">
+            </form>
+        </div>
+        <div class="pic">
+            <img style="height: 350px;width: 450px;" src="/static/meet.png" alt="meet-logo">
+            <h1 style="color: white;text-align: center;">Get a code to join this meeting</h1>
+        </div>
+    </div>
+</body>
+<style>
+    html{
+        font-family: monospace;
+        background: black;
+    }
+    .nav{
+        height: 40px;
+        width: 100%;
+        display: block;
+        padding-bottom: 40px;
+    }
+    .main{
+        /* background: blue; */
+        height: 500px;
+        width: 95%;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    .left-box{
+        background: transparent;
+        box-shadow:  0 0 2px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #228dff,
+      0 0 25px #228dff, 0 0 30px #228dff, 0 0 35px #228dff, 0 0 40px #228dff;
+        height: 450px;
+        width: 55%;
+        opacity: 90%;
+        border-radius: 5px;
+    }
+    .pic{
+        height: 450px;
+        width:40%;
+        float: right;
+    }
+    .main button{
+        background: turquoise;
+        height: 40px;
+        width: 130px;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        color: black;
+        font-family: monospace;
+        font-size:14px;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 70px;
+}
+.main button:hover{
+    background:rgb(7, 235, 178) ;
+}
+
+    .main input{
+        outline: none;
+        border: none;
+        font-family: monospace;
+        height: 40px;
+        width: 250px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 16px;
+        border-radius: 4px;
+        margin-right: 150px;
+        margin-top: 68px;
+    }
+    .main input:focus{
+        outline: none;
+        border: none;   
+    }
+</style>
+
+</html>

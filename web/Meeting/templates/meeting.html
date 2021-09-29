@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TamilCTF - {{code}}</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+</head>
+<body>
+    <div class="nav">
+        <img style="height: 40px;width: 40px;padding-left: 30px;float: left;" src="/static/logo.jpg" alt="logo">
+        <img style="float: right;height: 40px;width: 40px;padding-right: 20px;border-radius: 100%;" src="{{usr_logo}}" alt="user-logo">
+        <h1 style="color: white;padding-top: 5px;padding-left: 90px;">TamilCTF Meet [{{code}}]</h1>
+    </div>
+    <div class="main">
+        <div style="float: left;" class="left-box">
+            <div class="present-nav">
+                <h2 style="text-align: center;"><i class="fas fa-desktop"></i> Exploit Everything is presenting to everyone...</h2>
+                <div class="screen">
+                    <video autoplay src="/static/present.mp4"  style="height: 400px;width: 100%;"></video>
+                </div>
+            </div>
+        </div>
+        <div class="pic">
+            <h2 style="color: black;text-align: center;">Participants</h2>
+            <div class="participants">
+                <div class="members">
+                    <img style="float: left;" src="/static/exploiteverything.png" alt="exploiteverything">
+                    <h2 style="padding-left: 10px;padding-top: 6px;margin-right: 35px;margin-left: 80px;">Exploit Everything {{who0}}</h2>
+                </div>
+                <div class="members">
+                    <img style="float: left;" src="https://avatars.githubusercontent.com/u/56404692?v=4" alt="jopraveen">
+                    <h2 style="padding-left: 10px;padding-top: 6px;margin-right: 35px;margin-left: 80px;">Jopraveeen {{who1}}</h2>
+                </div>
+                <div class="members">
+                    <img style="float: left;" src="https://pbs.twimg.com/media/En7E4lkXcAAaV86.jpg" alt="CyberPJ">
+                    <h2 style="padding-left: 10px;padding-top: 6px;margin-right: 35px;margin-left: 80px;">CyberPJ {{who2}}</h2>
+                </div>
+                <div class="members">
+                    <img style="float: left;" src="/static/sin.jpg" alt="Ip Security Labs">
+                    <h2 style="padding-left: 10px;padding-top: 6px;margin-right: 35px;margin-left: 80px;">SIN_GREED {{who3}}</h2>
+                </div>
+                <div class="members">
+                    <img style="float: left;" src="/static/ajay.jpg" alt="0xAnnLynn">
+                    <h2 style="padding-left: 10px;padding-top: 6px;margin-right: 35px;margin-left: 80px;">0xAnnLynn {{who4}}</h2>
+                </div>
+                <div class="members">
+                    <img style="float: left;" src="/static/gokul.png" alt="Gokul">
+                    <h2 style="padding-left: 10px;padding-top: 6px;margin-right: 35px;margin-left: 80px;">Gokul {{who5}}</h2>
+                </div>
+                <div class="members">
+                    <img style="float: left;" src="https://1.bp.blogspot.com/-0qkwtPdA3-w/YEpFDj9a_6I/AAAAAAAAACU/g7K80xs2qvI3lqwe2a7LM-umBQTLolhmQCK4BGAYYCw/s84-pf/images%2B%252823%2529_1609246155887.jpeg" alt="">
+                    <h2 style="padding-left: 10px;padding-top: 6px;margin-right: 35px;margin-left: 80px;">0xsakthi {{who6}}</h2>
+                </div>
+            </div>
+            <div class="msg">
+                <h4><i class="fa fa-ban" aria-hidden="true"></i> You can't send messages</h4>
+            </div>
+        </div>
+</div>
+<div class="bottom-bar">
+    <div class="bt">
+    <i onclick="window.location.href='#'" style="color: #ffffff;cursor: pointer;background: #ff0000;border-radius: 100%;" class="fa-regular fa-circle-microphone"></i>
+    <i onclick="window.location.href='#'" style="color: #00acfc;cursor: pointer;" class="fa-solid fa-video-slash"></i>
+    <i onclick="window.location.href='/'" style="color: #ff0000;cursor: pointer;" class="fa-solid fa-phone-hangup"></i>
+    </div>
+</div>
+</body>
+<style>
+    html{
+        font-family: monospace;
+        background: black;
+    }
+    .nav{
+        height: 40px;
+        width: 100%;
+        display: block;
+        padding-bottom: 40px;
+    }
+    .main{
+        /* background: blue; */
+        height: 500px;
+        width: 95%;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    .left-box{
+        background: transparent;
+        box-shadow:  0 0 2px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #228dff,
+      0 0 25px #228dff, 0 0 30px #228dff, 0 0 35px #228dff, 0 0 40px #228dff;
+        height: 480px;
+        width: 65%;
+        opacity: 90%;
+        border-radius: 5px;
+    }
+    .pic{
+        height: 480px;
+        width:30%;
+        float: right;
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow:  0 0 1px #fff, 0 0 4px #fff, 0 0 5px #fff, 0 0 8px rgb(0, 250, 208),
+      0 0 15px rgb(0, 250, 208), 0 0 20px rgb(0, 250, 208);
+    }
+    .main button{
+        background: turquoise;
+        height: 40px;
+        width: 130px;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        color: black;
+        font-family: monospace;
+        font-size:14px;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 70px;
+}
+.main button:hover{
+    background:rgb(7, 235, 178) ;
+}
+    .main input{
+        outline: none;
+        border: none;
+        font-family: monospace;
+        height: 40px;
+        width: 250px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 16px;
+        border-radius: 4px;
+        margin-right: 150px;
+        margin-top: 68px;
+    }
+    .main input:focus{
+        outline: none;
+        border: none;   
+    }
+    .bottom-bar{
+        background: transparent;
+        text-align: center;
+        font-size: 28px;
+        margin-top: 20px;
+        height: 40px;
+        width: 72%;
+        opacity: 90%;
+        bottom: 0;
+        border-radius: 5px;
+        display: block;
+    }
+    .present-nav{
+        height: 30px;
+        width: 100%;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .participants{
+        /* background: chartreuse; */
+        height: 360px;
+    }
+    .msg{
+        text-align: center;
+        height: 20px;
+        color: rgb(0, 0, 0);
+    }
+    .participants img{
+        border-radius: 100px;
+        height: 35px;
+        margin-left: 20px;
+        width: 35px;
+    }
+    .members{
+        /* background: chocolate; */
+        height: 35px;
+
+    }
+    .screen{
+        background: transparent;
+        height: 400px;
+    }
+</style>
+
+</html>

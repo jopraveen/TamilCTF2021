@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CringeNcoder</title>
+</head>
+<body>
+    <div class="main">
+        <h1>CringeNcoder</h1>
+        <h2 style="text-align: center;">[!] Only use lowercase letters and numbers</h2>
+        <div class="box">
+            <form action="/encode" method="POST">  
+                <input type="text" name="text"><br><br><br>
+                <button type="submit"><a style="opacity: 60%;">cringe</a>Ncode</button>
+            </form>
+        </div>
+        <div class="result">
+            <h1 style="text-align: left;margin-left: 200px;"><a style="opacity: 60%;">cringe</a>Ncoded result: <a style="color: rgb(255, 0, 106);font-weight: bolder;">{{result}}</a></h1>
+        </div>
+    </div>
+</body>
+<style>
+    *{
+        font-family: monospace;
+    }
+    html{
+        background: rgb(255, 136, 0);
+    }
+    h1{
+        padding-top: 40px;
+        font-size: xx-large;
+        text-align: center;
+    }
+    .main{
+        height: 500px;
+    }
+    .box{
+        height: 300px;
+        text-align: center;
+        margin-top: 70px;
+    }
+    .box input{
+        text-align: center;
+        height: 250px;
+        width: 80%;
+        border-radius: 5px;
+        outline: none;
+        font-size: xx-large;
+        border: none;
+    }
+    .box button{
+        height: 30px;
+        outline: none;
+        border: none;
+        width: 150px;
+        border-radius: 6px;
+        background: rgb(0, 247, 255);
+        font-size: x-large;
+    }
+    .box button:hover{
+        background: rgb(0, 255, 128);
+        cursor: pointer;
+    }
+</style>
+</html>

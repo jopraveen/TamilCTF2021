@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money🤑</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/courses">[Courses]</a></li>
+            <li><a href="/about">about</a></li>
+        </ul>
+    </div>
+    <div class="welcm">
+        <h1>HAPPY LEARNING</h1>
+    </div>
+    <div class="main">
+        <div class="left-box">
+            <h1 style="font-weight: bolder;padding-top: 10px;">WORLD's BEST HACKING COURSE</h1><br>
+            <h2 style="padding-left: 28px;color: white;text-align: left;">=> We don't reveal our course contents</h2>
+            <h2 style="padding-left: 28px;color: white;text-align: left;">=> but I'm sure this is the world's best hacking course ever</h2>
+            <h2 style="padding-left: 28px;color: white;text-align: left;">=> You can hack anything after completing this course</h2>
+            <h2 style="padding-left: 28px;color: white;text-align: left;">=> This course is only for special persons</h2>
+            <h2 style="padding-left: 28px;color: white;text-align: left;">=> You can't buy this course coz it's protected</h2>
+            <h2 style="padding-left: 28px;color: white;text-align: left;">=> Request admin for this course</h2>
+        </div> 
+        <div class="pic">
+            <h1 style="font-weight: bolder;padding-top: 10px;">Enter redeem code</h1><br>
+            <input type="number" name="redeem-code-1" id="">
+            <h1 style="font-weight: bolder;padding-top: 10px;">Or pay via cringepay</h1>
+            <img src="/static/qrcode.png" style="height: 200px;width: 200px;" alt="qrcode"><br><br>
+            <form action="/get-course-8" method="POST">
+                <button name="amount" type="submit" value="10000000000" class="btn btn-outline-success waves-effect">₹10000000000</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p style="color: whitesmoke;text-align: center;">copyright@2021</p>
+    </div>
+</body>
+<style>
+    html{
+        background: black;
+        font-family: monospace;
+    }
+    .nav{
+    height: 40px;
+    width: 100%;
+    background: transparent;
+    color: cornsilk;
+    font-size: xx-large;
+    text-align: center;
+    box-shadow:  0 0 5px #0044ff,  0 0 5px #0044ff inset;
+    }
+    .nav:hover{
+        box-shadow: inset 0 0 10px #0044ff, 0 0 20px #0044ff inset, 0 0 20px #0044ff inset;
+    }
+    .nav ul li a:hover{
+        color: white;
+        font-weight: bolder;
+    }
+    .nav ul li{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    }
+    .nav ul li a{
+    align-items: center;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    text-shadow:0 0 10px #fff, 
+    0 0 20px #fff, 
+    0 0 30px #561990;
+}
+.welcm{
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    text-shadow:0 0 10px #fff, 
+    0 0 20px #fff, 
+    0 0 30px #0fbbb2;
+}
+
+.main{
+    padding-top: 20px;
+    padding-left:50px;
+    height: 450px;
+    padding-right: 50px;
+}
+.left-box{
+    text-align: center;
+    height: 400px;
+    color: rgb(43, 168, 226);
+    width: 55%;
+    float: left;
+    box-shadow:  0 0 5px #0044ff,  0 0 5px #0044ff inset;
+}
+.left-box:hover{
+    box-shadow: inset 0 0 10px #0044ff, 0 0 20px #0044ff inset, 0 0 20px #0044ff inset;
+
+}
+.left-box p{
+    color: snow;
+    font-size: larger;
+}
+.pic{
+    height: 400px;
+    float: right;
+    width: 40%;
+    color: lavender;
+    text-align: center;
+}
+.pic img{
+    height: 400px;
+    width: 100%;
+}
+.pic input{
+    outline: none;
+    border: none;
+    height: 25px;
+    width: 170px;
+    text-align: center;
+    font-family: monospace;
+    font-size:x-large;
+}
+.pic input:focus{
+    outline: none;
+}
+.pic button{
+    height: 30px;
+    width: 150px;
+    border: none;
+    background: transparent;
+    color: rgb(173, 255, 228);
+    font-family: monospace;
+    font-size: x-large;
+    box-shadow:  0 0 5px rgb(173, 255, 228),  0 0 5px rgb(173, 255, 228) inset;
+    cursor: pointer;
+}
+</style>
+</html>
