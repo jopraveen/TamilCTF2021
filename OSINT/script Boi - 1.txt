@@ -1,0 +1,1 @@
+A Hacker from VN Group claims that he hacked us and stole Tamil CTF OSINT challenge flags. Could you retrieve it from him? He is a tweet prankster. All we know about him is that he is a “Badman”. He gave out a clue for the first flag - “ I have Read it ( past tense broo)”
