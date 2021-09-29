@@ -1,0 +1,3 @@
+The main goal of this challenge is to find our final flag. 
+He challenged us to break his so-called great cipher with which he gave us the final flag file .
+(Don’t use crypto skills, use OSINT to solve(maybe he gave out the program))
