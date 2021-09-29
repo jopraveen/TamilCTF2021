@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <h1 style="text-align: center;">Don't blindly trust anyone</h1>
+        <div class="box">
+            <div class="nav">
+                <img style="float: left;height: 40px;width: 40px;border-radius: 100%;margin-left: 20px;margin-top: 5px;" src="/static/dp.jpg" alt="">
+                <i style="float: right;padding-right: 35px;margin-top: 12px;font-size: 25px;margin-left: 25px;" class="fa fa-phone"></i>
+                <i style="float: right;;margin-top: 12px;font-size: 25px;cursor: pointer;" class="fa fa-video-camera"></i>
+                <p style="margin-left: 70px;font-size: larger;font-weight: bolder;position: relative;margin-left: 90px;cursor: pointer;">I'm part 2</p>
+                <div style="clear: left;"></div>
+            </div>
+            <div class="screen">
+                 <div style="margin-top: 10px;" class="you">Hii</div><br><br><br>
+                 <div class="you">Hii</div><br><br>
+                 <div class="she">Hey</div><br><br>
+                 <div class="you">I need second part of the flag</div><br><br><br><br>
+                 <div class="she">Ask me again</div><br><br>
+                 <div class="{{yourclass}}">{{yourmsg}}</div><br><br><br><br>
+                 <div class="{{respclass}}">{{respmsg}}</div><br><br>
+            </div>
+            <div class="textbox">
+                <form action="/secondpart" method="GET">
+                <input type="text" name="message">
+                <button type="submit">
+                <i class="fa fa-paper-plane"></i>
+                </button>
+            </form>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    html{
+        background: #000;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .main{
+        height: 600px;
+        width: 100%;
+    }
+    .box{
+        margin: auto;
+        background: transparent;
+        height: 550px;
+        width: 350px;
+        margin-top: 50px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px rgb(255, 136, 0), 0 0 25px rgb(255, 136, 0), 0 0 5px rgb(255, 136, 0);
+    }
+    .nav{
+        display: inline-block;
+        width: 100%;
+        margin: auto;
+        background: transparent;
+        height: 50px;
+        box-shadow: 1px 1px 2px rgb(255, 136, 0), 0 0 25px rgb(255, 136, 0), 0 0 5px rgb(255, 136, 0);
+
+    }
+    .screen{
+        height: 450px;
+        width: 100%;
+        background: url("/static/bg.jpg");
+        overflow: scroll;
+        overflow-x: hidden;
+        color: black;
+    }
+    .screen::-webkit-scrollbar{
+        width: 5px;
+    }
+    .screen::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.445); 
+    }
+    .screen::-webkit-scrollbar-thumb {
+    background: rgb(255, 102, 0);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); 
+    }
+    .textbox{
+        height: 50px;
+        box-shadow: 1px 1px 2px rgb(255, 136, 0), 0 0 25px rgb(255, 136, 0), 0 0 5px rgb(255, 136, 0);
+    }
+    .you{
+        float: right;
+        background: rgb(255, 136, 0);
+        border-radius: 5px;
+        font-size: x-large;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: bolder;
+        max-width: 70%;
+        margin-right: 5px;
+    }
+    input{
+        height: 30px;
+        width: 80%;
+        margin-left: 5px;
+        margin-top: 10px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+    }
+    button{
+        float: right;
+        margin-top: 8px;
+        height: 35px;
+        text-align: center;
+        font-size: 25px;
+        cursor: pointer;
+        margin-right: 15px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        color: white;
+        background: transparent;
+    }
+    .she{
+        float: left;
+        background: rgb(0, 255, 157);
+        border-radius: 5px;
+        font-size: x-large;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: bolder;
+        margin-left: 10px;
+        max-width: 70%;
+    }
+</style>
+</html>
