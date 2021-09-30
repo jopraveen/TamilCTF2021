@@ -1,0 +1,39 @@
+sudo docker build -t  tamilctf2021xxe .
+sudo docker run -d -it -p 9876:9876 --name=xxeweb tamilctf2021xxe
+
+[OPTIONAL MYSQL SUPPORT]
+docker container run -d --name mysqldb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password mysql:latest
+
+sudo docker exec -it xxeweb /bin/bash
+
+#sudo apt update
+#sudo apt upgrade
+#sudo apt install php-mysql mysql-server 
+
+Set mysql root password as "testtamilctf"
+
+#service mysql restart
+#mysql -u root -p
+-testtamilctf
+
+mysql>create database sqlidb;
+
+mysql>CREATE TABLE `user` (
+	  `id` int(11) NOT NULL AUTO_INCREMENT,
+	  `user` text COLLATE utf8mb4_unicode_ci NOT NULL,
+	  `pass` text COLLATE utf8mb4_unicode_ci NOT NULL,
+	  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+mysql>INSERT INTO `user` (`id`, `user`, `pass`) VALUES
+(1,	'admin',	'4dM1n'),
+(2,	'user',	'p4s5w0rd');
+
+#cd /var/www/html/
+#php index.chp
+
+Check for any errors in output
+
+If no errors,launch the challenge in background successfully
+
+#php -S 0.0.0.0:9876 &
